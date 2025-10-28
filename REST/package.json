@@ -1,0 +1,25 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "description": "recap of a simple implamentation of a REST API ",
+  "keywords": [],
+  "author": "Valeriano Filipe",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --trace-warnings --env-file .env --watch ./src/index.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  }
+}
